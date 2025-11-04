@@ -62,6 +62,23 @@ The system demonstrates that hybrid approaches combining numerical price data wi
 | LSTM | 0.978 | 47.0 | 13.67% | Non-linear trends |
 | LLM (Seed-OSS) | - | - | 20.14% | News semantic understanding |
 
+### Performance Visualization
+
+#### LSTM Model Performance
+![LSTM Prediction Plot](results/LSTM/LSTM_daily.png)
+*LSTM model showing excellent alignment between actual (blue) and predicted (red) prices*
+
+#### ARIMA Performance
+![ARIMA](results/ARIMA/ARIMA_model_perf2.png)
+*ARIMA model demonstrating limited capability in capturing complex market dynamics*
+#### Clustering Results
+![K-means Clustering](results/Clustering/Kmeans-1wordtrained-plot-10cluster.png)
+*Keyword clustering based on price change impact showing distinct market reaction patterns*
+
+#### Trading Simulation Results
+![Backtest Results](results/Backtest/Backtest1-plot3.png)
+*Portfolio performance using LSTM-based trading strategy*
+
 ### Key Findings
 - **LSTM outperforms ARIMA** in capturing non-linear patterns and sudden market shifts
 - **LLMs provide valuable semantic insights** but require combination with numerical models
